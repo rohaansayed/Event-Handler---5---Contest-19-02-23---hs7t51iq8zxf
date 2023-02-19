@@ -8,7 +8,9 @@ const App =() => {
 
   return (
     <div id="main">
-      <form>
+      <form onSubmit={(event)
+     =>{event.preventDefault()}}
+      >
         <label htmlFor='name'>Name</label>
         <input id="name" type={"text"} />
 
