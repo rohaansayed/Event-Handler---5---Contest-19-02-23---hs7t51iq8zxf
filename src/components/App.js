@@ -1,10 +1,9 @@
 import React from 'react'
 import '../styles/App.css';
-const App = () => {
+const App =() => {
 
-  const buttonclick=(event)=>{
-    event.preventDefault();
-    console.log("form submitted")
+  const submitButton=()=>{
+    console.log("form submitted");
   }
 
   return (
@@ -15,7 +14,7 @@ const App = () => {
 
         <br />
         <br />
-        <button type='submit' onclick={buttonclick}>Submit</button>
+        <button type='submit' onclick={submitButton}>Submit</button>
       </form>
     </div>
   )
